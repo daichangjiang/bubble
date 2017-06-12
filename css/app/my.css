@@ -1,0 +1,158 @@
+body {
+	background: #f5f5f5;
+	font-family: "微软雅黑";
+}
+
+.banner-top-wrapper {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	height: 72px;
+	box-sizing: border-box;
+	background: #8E44AD;
+}
+
+.banner-top-container {
+	max-width: 1024px;
+	height: 100%;
+	margin: auto;
+	padding: 0px 3.6em;
+}
+
+.banner-top-container-left {
+	height: 100%;
+	width: 50%;
+	float: left;
+	line-height: 72px;
+}
+
+.banner-top-container-right {
+	height: 100%;
+	float: left;
+	width: 50%;
+	line-height: 72px;
+}
+
+.banner-top-container-slogan {
+	display: inline-block;
+	color: #ECF0F1;
+	margin-left: 1.2em;
+	vertical-align: top;
+}
+
+.banner-top-container-title {
+	display: inline-block;
+	color: white;
+	font-size: 1.6em;
+}
+
+.banner-top-container-menu {
+	color: white;
+	font-size: 1.2em;
+	background: #E74C3C;
+	margin: auto;
+	width: 216px;
+	text-align: center;
+	height: 48px;
+	line-height: 48px;
+	box-sizing: border-box;
+	margin-top: 12px;
+}
+
+.banner-top-container-menu div {
+	-webkit-transition: transform 1s;
+	/* Safari */
+	transition: transform 1s;
+}
+
+.banner-top-container-menu:hover div {
+	-ms-transform: scale(1.5, 1.5);
+	/* IE 9 */
+	-webkit-transform: scale(1.5, 1.5);
+	/* Safari */
+	transform: scale(1.5, 1.5);
+}
+
+.main-content-wrapper {
+	margin: auto;
+	width: 1024px;
+	background: white;
+	height: auto;
+	margin-top: 96px;
+	overflow: hidden;
+}
+
+table.imagetable {
+	font-size: 12px;
+	width: 960px;
+	margin: 24px auto;
+	border: 1px solid #f4d3d3;
+    border-collapse: collapse;
+    color: #1a1a1a;
+}
+
+table.imagetable th {
+	padding: 8px;
+	width: 16.6667%;
+	font-size: 16px;
+    font-weight: 700;
+}
+
+table.imagetable td {
+	padding: 8px;
+	box-sizing: border-box;
+	width: 16.66667%;
+	border: 1px solid #f4d3d3;
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: 400;
+}
+
+table.imagetable .dark1 {
+    background: #fdb9af;
+}
+
+table.imagetable tr:first-of-type td {
+    border-top: none;
+}
+
+table.imagetable td.bk-pink{
+	border-bottom-color: #fff;
+}
+
+table.imagetable tr:last-child td.bk-pink{
+	border-bottom-color: #f4d3d3;
+}
+
+.m-ml10{
+	margin-left: 10px;
+}
+
+.m-mr10{
+	margin-right: 10px;
+}
+
+.m-ml5{
+	margin-left: 5px;
+}
+
+.m-mr5{
+	margin-right: 5px;
+}
+
+.c-gold{
+	color: gold;
+}
+
+.c-silver{
+	color: silver;
+}
+
+.c-copper{
+	color:RGB(186,110,64);
+}
+
+.bk-pink{
+	background: #fdecea;
+}

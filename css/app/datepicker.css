@@ -1,0 +1,220 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+	float: left;
+}
+
+body {
+	font: normal 12px/1.5 "Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti, sans-serif;
+	color: #61666e;
+	background: aliceblue;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+.calendar-wrapper {
+	font-size: 0.24rem;
+	width: 100%;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.calendar-title {
+	font-size: 0.42rem;
+	height: 0.98rem;
+	line-height: 0.98rem;
+	background: #1ABC9C;
+	color: #ECF0F1;
+}
+
+.calendar-title li {
+	float: left;
+	width: 14.28%;
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	border-right: 1px solid #ECF0F1;
+}
+
+.calendar-title li:last-child {
+	border-right: none;
+}
+
+.calendar-title li:nth-last-child(1),
+.calendar-title li:nth-last-child(2) {
+	background: #E74C3C;
+}
+
+.calendar-month {
+	height: 1.64rem;
+	line-height: 0.8rem;
+	text-align: center;
+	background: cadetblue;
+	color: white;
+	padding: 0.24rem 0px;
+	position: relative;
+}
+
+.calendar-month .year {
+	display: block;
+	font-size: 0.48rem;
+}
+
+.calendar-month .month {
+	display: block;
+	font-size: 0.36rem;
+}
+
+.calendar-month .arrow {
+	position: absolute;
+	height: 1.64rem;
+	width: 0.64rem;
+	font-size: 0.72rem;
+	line-height: 1.64rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.calendar-month .right-arrow {
+	right: 0px;
+}
+
+.calendar-date {
+	font-size: 0.32rem;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	background: #eee;
+	color: #777;
+}
+
+.calendar-date li {
+	float: left;
+	width: 14.28%;
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	border-right: 1px solid #BDC3C7;
+	border-bottom: 1px solid #BDC3C7;
+	height: 0.88rem;
+}
+
+.calendar-date li.disabled{
+	color: #AAA;
+	background: #CCC;
+}
+
+.calendar-date li.today{
+	color: white;
+	background: deepskyblue;
+}
+
+.calendar-date li:last-child {
+	border-right: none;
+}
+
+.calendar-date:last-child li {
+	border-bottom: none;
+}

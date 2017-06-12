@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/lib/normalize.css" />
+		<script type="text/javascript" src="js/lib/jquery.js" ></script>
+		<style>
+			.my-element{
+				width: 100px;
+			    height: 100px;
+			    border: 1px solid deepskyblue;
+			    box-sizing: border-box;
+			    position: relative;
+			    position: fixed;
+			    border-radius: 50%;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+
+		<script>
+			$(function(){
+				addElemets(10);
+				autoMoveElement();
+			})
+			function addElemets(param){
+				while(param > 0){
+					var $h1=$("<div id='elemet-" + param + "' class='my-element'></div>");  
+					$("body").append($h1);  
+					$("#elemet-" + param).css({"left":window.innerWidth * Math.random() + "px", "top": window.innerHeight * Math.random() + 'px'})
+					param--;
+				}
+			}
+			function autoMoveElement(){
+				var countNumber = $(".my-element").length;
+				for (var i=1;i<=countNumber;i++) {
+					(function(index){
+						var timeRandom = parseInt(Math.random() * 10000) + 2000;
+						var moveX = window.innerWidth * Math.random();
+						var moveY = window.innerHeight * Math.random();
+						$("#elemet-" + index).animate({left: moveX + 'px',top: moveY + 'px'}, timeRandom);
+						setInterval(function(){
+							var moveX = window.innerWidth * Math.random();
+							var moveY = window.innerHeight * Math.random();
+							$("#elemet-" + index).animate({left: moveX + 'px',top: moveY + 'px'}, timeRandom);
+						},timeRandom);
+					})(i)
+				}
+			}
+		</script>
+	</body>
+
+</html>
